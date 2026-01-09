@@ -7,9 +7,7 @@ This project uses a trained ML model and provides a beautiful Streamlit UI where
 
 🚀 Live Demo
 
-(If deployed)
-👉 Add your deployed link here
-https://your-app-name.streamlit.app
+👉  [https://your-app-name.streamlit.app](https://heart-disease-prediction-dtzrlobx7jjxi6jwlvajmc.streamlit.app/)
 
 ✅ Features
 
