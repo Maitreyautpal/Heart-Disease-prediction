@@ -152,7 +152,7 @@ Weighted Accuracy: 92%
     Health Analytics
 
 Model Learning and Validation Curve Plot:
-    learning_curve.png
+    [learning_curve.png](https://github.com/Maitreyautpal/Heart-Disease-prediction/commit/35c93f0daa92b032bbf78050ba9c210f2e88e214)
 
 🙌 Author
 
