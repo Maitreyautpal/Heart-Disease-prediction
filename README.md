@@ -154,5 +154,6 @@ Weighted Accuracy: 92%
 🙌 Author
 
     Maitreya Utpal
-   💼 Aspiring Machine Learning Engineer
-   📫 Feel free to connect!
+💼 Aspiring Machine Learning Engineer
+   
+📫 Feel free to connect!
