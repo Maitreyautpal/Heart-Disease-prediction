@@ -151,6 +151,9 @@ Weighted Accuracy: 92%
 
     Health Analytics
 
+Model Learning and Validation Curve Plot:
+    learning_curve.png
+
 🙌 Author
 
     Maitreya Utpal
