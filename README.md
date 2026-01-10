@@ -74,10 +74,12 @@ Multiple Advance ML models were trained, evaluated & compared — and Logistic R
 Accuracy: 92.59%
 
 ✔ Confusion Matrix
-    [[32,  1],
-    [ 3, 18]]
+ 
+     [[32,  1],
+     [ 3, 18]]
 
 ✔ Classification Report
+
               precision    recall  f1-score   support
            0       0.91      0.97      0.94        33
            1       0.95      0.86      0.90        21
@@ -89,27 +91,31 @@ weighted avg       0.93      0.93      0.93        54
 Weighted Accuracy: 92%
 
 🏅 Other Models Performance
-   Model	Accuracy
-   Decision Tree	70%
-   SVC	81%
-   Random Forest	83%
-   KNN	85%
-   XGBoost	87%
-   Naive Bayes	90%
-⭐ Logistic Regression (Final)	92.59%
+
+    Model	Accuracy
+    Decision Tree	70%
+    SVC	81%
+    Random Forest	83%
+    KNN	85%
+    XGBoost	87%
+    Naive Bayes	90%
+⭐  Logistic Regression (Final)	92.59%
+
 ✔ Cross Validation
 
-Mean CV Accuracy: 0.8262
+   Mean CV Accuracy: 0.8262
 
 ✔ GridSearchCV Best Parameters
-Best Accuracy : 0.8522
-Best Params:
-n_estimators = 300
-min_samples_leaf = 4
-min_samples_split = 2
-max_depth = None
+
+   Best Accuracy : 0.8522
+   Best Params:
+   n_estimators = 300
+   min_samples_leaf = 4
+   min_samples_split = 2
+   max_depth = None
 
 💾 Model Saving
+
     import joblib as jb
     jb.dump(model_lc,'Heart-Disease_model.pkl')
     jb.dump(scaler,'scaler.pkl')
@@ -117,36 +123,36 @@ max_depth = None
 
 🌐 Deployment
 
-Streamlit UI Created
+    Streamlit UI Created
 
-Hosted Successfully
+    Hosted Successfully
 
-Mobile + Desktop Compatible
+    Mobile + Desktop Compatible
 
 📌 Tech Stack
 
-Python
+    Python
 
-Scikit-Learn
+    Scikit-Learn
 
-Pandas / NumPy
+    Pandas / NumPy
 
-Streamlit
+    Streamlit
 
-Joblib
+    Joblib
 
-XGBoost
+    XGBoost
 
 🎯 Use Cases
 
-Early Heart Disease Screening
+   Early Heart Disease Screening
 
-Medical Decision Support
+   Medical Decision Support
 
-Health Analytics
+   Health Analytics
 
 🙌 Author
 
-Maitreya Utpal
-💼 Aspiring Machine Learning Engineer
-📫 Feel free to connect!
+   Maitreya Utpal
+   💼 Aspiring Machine Learning Engineer
+   📫 Feel free to connect!
