@@ -107,12 +107,12 @@ Weighted Accuracy: 92%
 
 ✔ GridSearchCV Best Parameters
 
-   Best Accuracy : 0.8522
-   Best Params:
-   n_estimators = 300
-   min_samples_leaf = 4
-   min_samples_split = 2
-   max_depth = None
+     Best Accuracy : 0.8522
+     Best Params:
+     n_estimators = 300
+     min_samples_leaf = 4
+     min_samples_split = 2
+     max_depth = None
 
 💾 Model Saving
 
@@ -145,15 +145,15 @@ Weighted Accuracy: 92%
 
 🎯 Use Cases
 
-   Early Heart Disease Screening
+    Early Heart Disease Screening
 
-   Medical Decision Support
+    Medical Decision Support
 
-   Health Analytics
+    Health Analytics
 
 🙌 Author
 
-   Maitreya Utpal
+    Maitreya Utpal
    
    💼 Aspiring Machine Learning Engineer
    📫 Feel free to connect!
