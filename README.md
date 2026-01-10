@@ -79,7 +79,6 @@ Accuracy: 92.59%
      [ 3, 18]]
 
 ✔ Classification Report
-
               precision    recall  f1-score   support
            0       0.91      0.97      0.94        33
            1       0.95      0.86      0.90        21
@@ -102,8 +101,7 @@ Weighted Accuracy: 92%
 ⭐  Logistic Regression (Final)	92.59%
 
 ✔ Cross Validation
-
-   Mean CV Accuracy: 0.8262
+     Mean CV Accuracy: 0.8262
 
 ✔ GridSearchCV Best Parameters
 
@@ -154,5 +152,6 @@ Weighted Accuracy: 92%
 🙌 Author
 
    Maitreya Utpal
+   
    💼 Aspiring Machine Learning Engineer
    📫 Feel free to connect!
