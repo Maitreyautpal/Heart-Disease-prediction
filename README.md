@@ -79,12 +79,13 @@ Accuracy: 92.59%
      [ 3, 18]]
 
 ✔ Classification Report
-              precision    recall  f1-score   support
-           0       0.91      0.97      0.94        33
-           1       0.95      0.86      0.90        21
-    accuracy                           0.93        54
-   macro avg       0.93      0.91      0.92        54
-weighted avg       0.93      0.93      0.93        54
+
+                    precision    recall  f1-score   support
+               0       0.91      0.97      0.94        33
+               1       0.95      0.86      0.90        21
+        accuracy                           0.93        54
+       macro avg       0.93      0.91      0.92        54
+    weighted avg       0.93      0.93      0.93        54
 
 
 Weighted Accuracy: 92%
@@ -101,6 +102,7 @@ Weighted Accuracy: 92%
 ⭐  Logistic Regression (Final)	92.59%
 
 ✔ Cross Validation
+
      Mean CV Accuracy: 0.8262
 
 ✔ GridSearchCV Best Parameters
