@@ -1,26 +1,37 @@
-
 ❤️ Heart Disease Prediction System
 
-A Machine Learning–powered web application that predicts the risk of heart disease based on patient health parameters.
-The project compares multiple ML models and selects the Logistic Regression model as the best final model with 92.59% accuracy.
+A Machine Learning–powered web application that predicts the risk of Heart Disease based on patient health parameters.
+Multiple Advance ML models were trained, evaluated & compared — and Logistic Regression was selected as the best model with 92.59% accuracy.
 
-Application is deployed using Streamlit, and trained model is saved using Joblib (.pkl).
+✔ Built with Python & Scikit-Learn
+✔ Streamlit Web Application
+✔ Model Saved Using Joblib (.pkl)
+✔ Fully Deployment Ready
 
 🚀 Live Demo
-👉  https://heart-disease-prediction-v4tyhu6hshw5aenpzyvxw7.streamlit.app/
+
+👉 https://heart-disease-prediction-v4tyhu6hshw5aenpzyvxw7.streamlit.app/
 
 🚀 Project Features
 
 ✔️ Data Preprocessing
+
 ✔️ Feature Scaling (MinMaxScaler)
+
 ✔️ Multiple ML Models Trained & Compared
+
 ✔️ Cross Validation & Hyperparameter Tuning
+
 ✔️ Best Model Selection
+
 ✔️ Confusion Matrix & Classification Report
+
 ✔️ Streamlit Web App
+
 ✔️ Deployment Ready
 
 📂 Dataset Features
+    (Dataset : Heart_Disease_Prediction.csv by kaggle platform)
 Feature	Description
 Age	Patient’s age in years
 Sex	1 = Male, 0 = Female
@@ -33,39 +44,38 @@ Max HR	Maximum Heart Rate achieved
 Exercise angina	Exercise induced angina (1=yes, 0=no)
 ST depression	Depression induced by exercise
 Slope of ST	Peak exercise ST segment slope
-Number of vessels fluro	Number of major vessels colored by fluoroscopy
+Number of vessels fluro	Major vessels colored by fluoroscopy
 Thallium	Thallium stress test result
 
 🎯 Target Variable
 
-Heart Disease → 1 = Disease Present, 0 = No Disease
+Heart Disease
+
+1 = Disease Present
+
+0 = No Disease
 
 🔧 Feature Scaling
 
-MinMax Scaling applied on numeric features:
+MinMax Scaling applied:
 
 from sklearn.preprocessing import MinMaxScaler
 scaler = MinMaxScaler()
 X = scaler.fit_transform(X)
 
 🧠 Model Performance Comparison
-
-Below are the results of all trained models:
-
 ⭐ Final Selected Model — Logistic Regression
 
-Accuracy: 0.9259
+Accuracy: 92.59%
 
-Confusion Matrix
+✔ Confusion Matrix
 [[32,  1],
  [ 3, 18]]
 
-##Classification Report:
+✔ Classification Report
               precision    recall  f1-score   support
-
            0       0.91      0.97      0.94        33
            1       0.95      0.86      0.90        21
-
     accuracy                           0.93        54
    macro avg       0.93      0.91      0.92        54
 weighted avg       0.93      0.93      0.93        54
@@ -74,64 +84,6 @@ weighted avg       0.93      0.93      0.93        54
 Weighted Accuracy: 92%
 
 🏅 Other Models Performance
-🔹 KNN
-
-Accuracy: 0.8518
-
-[[28,  5],
- [ 3, 18]]
-
-🔹 SVC
-
-Accuracy: 0.8148
-
-[[28,  5],
- [ 5, 16]]
-
-🔹 Decision Tree
-
-Accuracy: 0.7037
-
-[[22, 11],
- [ 5, 16]]
-
-🔹 Naive Bayes
-
-Accuracy: 0.9074
-
-[[32,  1],
- [ 4, 17]]
-
-🔹 XGBoost
-
-Accuracy: 0.8703
-
-[[31, 2],
- [ 5, 16]]
-
-🔹 Random Forest
-
-Accuracy: 0.8333
-
-[[25, 5],
- [ 4, 20]]
-
-Cross Validation
-
-Mean CV Accuracy: 0.8262
-
-GridSearchCV Best Result
-Best Accuracy: 0.8522
-Best Params:
-max_depth=None
-min_samples_leaf=4
-min_samples_split=2
-n_estimators=300
-
-🏆 Conclusion
-
-Among all models:
-
 Model	Accuracy
 Decision Tree	70%
 SVC	81%
@@ -139,24 +91,20 @@ Random Forest	83%
 KNN	85%
 XGBoost	87%
 Naive Bayes	90%
-⭐ Logistic Regression (FINAL)	92.59% ✔️
+⭐ Logistic Regression (Final)	92.59%
+✔ Cross Validation
 
-👉 Logistic Regression performs the best with:
+Mean CV Accuracy: 0.8262
 
--Highest accuracy
-
--Best balanced precision & recall
-
--Stable performance
-
--Lower overfitting risk
-
-So it is selected as the final deployed model.
+✔ GridSearchCV Best Parameters
+Best Accuracy : 0.8522
+Best Params:
+n_estimators = 300
+min_samples_leaf = 4
+min_samples_split = 2
+max_depth = None
 
 💾 Model Saving
-
-Model, scaler and feature columns are saved using Joblib:
-
 import joblib as jb
 jb.dump(model_lc,'Heart-Disease_model.pkl')
 jb.dump(scaler,'scaler.pkl')
@@ -164,11 +112,11 @@ jb.dump(X.columns.to_list(),'columns.pkl')
 
 🌐 Deployment
 
-Streamlit UI created
+Streamlit UI Created
 
-Hosted successfully
+Hosted Successfully
 
-Mobile & desktop compatible
+Mobile + Desktop Compatible
 
 📌 Tech Stack
 
@@ -176,7 +124,7 @@ Python
 
 Scikit-Learn
 
-Pandas / Numpy
+Pandas / NumPy
 
 Streamlit
 
@@ -184,15 +132,16 @@ Joblib
 
 XGBoost
 
-🎯 Use Case
+🎯 Use Cases
 
-Early heart disease risk screening
+Early Heart Disease Screening
 
-Medical decision support
+Medical Decision Support
 
-Health analytics
+Health Analytics
 
-🙌 BY:
-Maitreya
+🙌 Author
+
+Maitreya Utpal
 💼 Aspiring Machine Learning Engineer
 📫 Feel free to connect!
