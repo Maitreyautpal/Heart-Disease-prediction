@@ -1,104 +1,198 @@
-.
 
-🩺 Heart Disease Prediction Web App
-🔥 A Machine Learning powered web application to predict the risk of Heart Disease using patient health parameters.
+❤️ Heart Disease Prediction System
 
-This project uses a trained ML model and provides a beautiful Streamlit UI where users can input details like age, blood pressure, cholesterol, chest pain type, etc., and instantly get prediction results with probability.
+A Machine Learning–powered web application that predicts the risk of heart disease based on patient health parameters.
+The project compares multiple ML models and selects the Logistic Regression model as the best final model with 92.59% accuracy.
+
+Application is deployed using Streamlit, and trained model is saved using Joblib (.pkl).
 
 🚀 Live Demo
-
 👉  https://heart-disease-prediction-v4tyhu6hshw5aenpzyvxw7.streamlit.app/
 
-✅ Features
+🚀 Project Features
 
-✔️ Clean & Beautiful UI
+✔️ Data Preprocessing
+✔️ Feature Scaling (MinMaxScaler)
+✔️ Multiple ML Models Trained & Compared
+✔️ Cross Validation & Hyperparameter Tuning
+✔️ Best Model Selection
+✔️ Confusion Matrix & Classification Report
+✔️ Streamlit Web App
+✔️ Deployment Ready
 
-✔️ Real-time prediction
+📂 Dataset Features
+Feature	Description
+Age	Patient’s age in years
+Sex	1 = Male, 0 = Female
+Chest pain type	0 = Typical angina, 1 = Atypical angina, 2 = Non-anginal pain, 3 = Asymptomatic
+BP	Resting Blood Pressure (mmHg)
+Cholesterol	Serum cholesterol (mg/dl)
+FBS over 120	Fasting blood sugar > 120 mg/dl (1=True, 0=False)
+EKG results	Resting Electrocardiographic results
+Max HR	Maximum Heart Rate achieved
+Exercise angina	Exercise induced angina (1=yes, 0=no)
+ST depression	Depression induced by exercise
+Slope of ST	Peak exercise ST segment slope
+Number of vessels fluro	Number of major vessels colored by fluoroscopy
+Thallium	Thallium stress test result
 
-✔️ Shows Disease Risk + Probability
+🎯 Target Variable
 
-✔️ Works on Web Browser
+Heart Disease → 1 = Disease Present, 0 = No Disease
 
-✔️ Easy To Use
+🔧 Feature Scaling
 
-🧠 Tech Stack
+MinMax Scaling applied on numeric features:
 
-Python
+from sklearn.preprocessing import MinMaxScaler
+scaler = MinMaxScaler()
+X = scaler.fit_transform(X)
 
-Streamlit
+🧠 Model Performance Comparison
 
-Machine Learning Model (Logistic / RF / XGBoost)
+Below are the results of all trained models:
 
-Scikit-Learn
+⭐ Final Selected Model — Logistic Regression
 
-Pandas
+Accuracy: 0.9259
 
-Numpy
+Confusion Matrix
+[[32,  1],
+ [ 3, 18]]
 
-Joblib
+##Classification Report:
+              precision    recall  f1-score   support
 
-📂 Project Structure
-📁 Heart Disease Prediction
-│
-├── app.py
-├── Heart-Disease_model.pkl
-├── scaler.pkl
-├── columns.pkl
-├── requirements.txt
-└── README.md
+           0       0.91      0.97      0.94        33
+           1       0.95      0.86      0.90        21
 
-🏃‍♂️ Run Locally
-1️⃣ Clone the Repo
-git clone <repo-link>
-cd heart-disease-prediction
+    accuracy                           0.93        54
+   macro avg       0.93      0.91      0.92        54
+weighted avg       0.93      0.93      0.93        54
 
-2️⃣ Install Dependencies
-pip install -r requirements.txt
 
-3️⃣ Run App
-streamlit run app.py
+Weighted Accuracy: 92%
+
+🏅 Other Models Performance
+🔹 KNN
+
+Accuracy: 0.8518
+
+[[28,  5],
+ [ 3, 18]]
+
+🔹 SVC
+
+Accuracy: 0.8148
+
+[[28,  5],
+ [ 5, 16]]
+
+🔹 Decision Tree
+
+Accuracy: 0.7037
+
+[[22, 11],
+ [ 5, 16]]
+
+🔹 Naive Bayes
+
+Accuracy: 0.9074
+
+[[32,  1],
+ [ 4, 17]]
+
+🔹 XGBoost
+
+Accuracy: 0.8703
+
+[[31, 2],
+ [ 5, 16]]
+
+🔹 Random Forest
+
+Accuracy: 0.8333
+
+[[25, 5],
+ [ 4, 20]]
+
+Cross Validation
+
+Mean CV Accuracy: 0.8262
+
+GridSearchCV Best Result
+Best Accuracy: 0.8522
+Best Params:
+max_depth=None
+min_samples_leaf=4
+min_samples_split=2
+n_estimators=300
+
+🏆 Conclusion
+
+Among all models:
+
+Model	Accuracy
+Decision Tree	70%
+SVC	81%
+Random Forest	83%
+KNN	85%
+XGBoost	87%
+Naive Bayes	90%
+⭐ Logistic Regression (FINAL)	92.59% ✔️
+
+👉 Logistic Regression performs the best with:
+
+-Highest accuracy
+
+-Best balanced precision & recall
+
+-Stable performance
+
+-Lower overfitting risk
+
+So it is selected as the final deployed model.
+
+💾 Model Saving
+
+Model, scaler and feature columns are saved using Joblib:
+
+import joblib as jb
+jb.dump(model_lc,'Heart-Disease_model.pkl')
+jb.dump(scaler,'scaler.pkl')
+jb.dump(X.columns.to_list(),'columns.pkl')
 
 🌐 Deployment
 
-Deployed using Streamlit Cloud
+Streamlit UI created
 
-Steps:
-1️⃣ Upload project to GitHub
-2️⃣ Go to share.streamlit.io
-3️⃣ Connect repo → Select app.py → Deploy
+Hosted successfully
 
-🎯 Input Features Used
+Mobile & desktop compatible
 
-Age
+📌 Tech Stack
 
-Sex
+Python
 
-Chest pain type
+Scikit-Learn
 
-BP
+Pandas / Numpy
 
-Cholesterol
+Streamlit
 
-FBS over 120
+Joblib
 
-EKG results
+XGBoost
 
-Max HR
+🎯 Use Case
 
-Exercise angina
+Early heart disease risk screening
 
-ST depression
+Medical decision support
 
-Slope of ST
+Health analytics
 
-Number of vessels fluro
-
-Thallium
-
-Target: Heart Disease (Yes/No)
-
-🙌 Author
-
+🙌 BY:
 Maitreya
 💼 Aspiring Machine Learning Engineer
 📫 Feel free to connect!
