@@ -154,6 +154,11 @@ Weighted Accuracy: 92%
 Model Learning and Validation Curve Plot:
     [learning_curve.png](https://github.com/Maitreyautpal/Heart-Disease-prediction/commit/35c93f0daa92b032bbf78050ba9c210f2e88e214)
 
+    
+Screenshot:
+screenshot/Screenshot%202026-01-25%20235918.png
+
+
 🙌 Author
 
     Maitreya Utpal
